@@ -344,7 +344,7 @@ MUSL_OMIT_HEADERS += \
 
 ifeq ($(THREAD_MODEL), single)
 # Remove headers not supported in single-threaded mode.
-MUSL_OMIT_HEADERS += "aio.h" "pthread.h"
+MUSL_OMIT_HEADERS += "aio.h"
 endif
 
 default: finish
