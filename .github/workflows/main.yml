@@ -47,8 +47,8 @@ jobs:
     - name: Install clang (Linux)
       shell: bash
       run: |
-        curl -sSfL https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz | tar xJf -
-        export CLANG_DIR=`pwd`/clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04/bin
+        curl -sSfL https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz | tar xJf -
+        export CLANG_DIR=`pwd`/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04/bin
         echo "$CLANG_DIR" >> $GITHUB_PATH
         echo "WASM_CC=$CLANG_DIR/clang" >> $GITHUB_ENV
       if: matrix.os == 'ubuntu-latest'
