@@ -55,7 +55,7 @@ jobs:
 
     - name: Build libc
       shell: bash
-      run: make -j4
+      run: make -j1
 
     - uses: actions/upload-artifact@v1
       with:
