@@ -2350,6 +2350,7 @@
 #define _SYS_PARAM_H 
 #define _SYS_RANDOM_H 
 #define _SYS_REG_H 
+#define _SYS_RESOURCE_H
 #define _SYS_SELECT_H 
 #define _SYS_SOCKET_H 
 #define _SYS_STAT_H 

@@ -257,6 +257,8 @@ LIBWASI_EMULATED_GETPID_OBJS = $(call objs,$(LIBWASI_EMULATED_GETPID_SOURCES))
 LIBWASI_EMULATED_SIGNAL_OBJS = $(call objs,$(LIBWASI_EMULATED_SIGNAL_SOURCES))
 LIBWASI_EMULATED_SIGNAL_MUSL_OBJS = $(call objs,$(LIBWASI_EMULATED_SIGNAL_MUSL_SOURCES))
 
+LIBC_OBJS += $(LIBWASI_EMULATED_PROCESS_CLOCKS_OBJS)
+
 # These variables describe the locations of various files and
 # directories in the generated sysroot tree.
 SYSROOT_LIB := $(SYSROOT)/lib/$(MULTIARCH_TRIPLE)
@@ -354,8 +356,6 @@ $(SYSROOT_LIB)/libc-printscan-long-double.a: $(MUSL_PRINTSCAN_LONG_DOUBLE_OBJS)
 $(SYSROOT_LIB)/libc-printscan-no-floating-point.a: $(MUSL_PRINTSCAN_NO_FLOATING_POINT_OBJS)
 
 $(SYSROOT_LIB)/libwasi-emulated-mman.a: $(LIBWASI_EMULATED_MMAN_OBJS)
-
-$(SYSROOT_LIB)/libwasi-emulated-process-clocks.a: $(LIBWASI_EMULATED_PROCESS_CLOCKS_OBJS)
 
 $(SYSROOT_LIB)/libwasi-emulated-getpid.a: $(LIBWASI_EMULATED_GETPID_OBJS)
 
@@ -463,7 +463,6 @@ libc: include_dirs \
     $(SYSROOT_LIB)/libc-printscan-long-double.a \
     $(SYSROOT_LIB)/libc-printscan-no-floating-point.a \
     $(SYSROOT_LIB)/libwasi-emulated-mman.a \
-    $(SYSROOT_LIB)/libwasi-emulated-process-clocks.a \
     $(SYSROOT_LIB)/libwasi-emulated-getpid.a \
     $(SYSROOT_LIB)/libwasi-emulated-signal.a
 
