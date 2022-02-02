@@ -1,7 +1,3 @@
-#ifndef _WASI_EMULATED_SIGNAL
-#error "wasm lacks signal support; to enable minimal signal emulation, \
-compile with -D_WASI_EMULATED_SIGNAL and link with -lwasi-emulated-signal"
-#else
 #ifndef _SIGNAL_H
 #define _SIGNAL_H
 
@@ -327,5 +323,4 @@ __REDIR(sigtimedwait, __sigtimedwait_time64);
 }
 #endif
 
-#endif
 #endif
