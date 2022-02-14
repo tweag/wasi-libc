@@ -3117,6 +3117,7 @@
 #define __wasm32 1
 #define __wasm32__ 1
 #define __wasm__ 1
+#define __wasm_mutable_globals__ 1
 #define __wasm_nontrapping_fptoint__ 1
 #define __wasm_sign_ext__ 1
 #define __wasm_simd128__ 1
