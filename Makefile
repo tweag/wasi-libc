@@ -3,7 +3,7 @@
 WASM_CC ?= clang
 WASM_NM ?= $(patsubst %clang,%llvm-nm,$(filter-out ccache sccache,$(WASM_CC)))
 WASM_AR ?= $(patsubst %clang,%llvm-ar,$(filter-out ccache sccache,$(WASM_CC)))
-WASM_CFLAGS ?= -g -O3 -mmutable-globals -mnontrapping-fptoint -mreference-types -msign-ext -msimd128 -DNDEBUG
+WASM_CFLAGS ?= -g -O3 -mmutable-globals -mnontrapping-fptoint -mreference-types -msign-ext -DNDEBUG
 # The directory where we build the sysroot.
 SYSROOT ?= $(CURDIR)/sysroot
 # A directory to install to for "make install".

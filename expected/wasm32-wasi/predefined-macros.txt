@@ -3121,7 +3121,6 @@
 #define __wasm_nontrapping_fptoint__ 1
 #define __wasm_reference_types__ 1
 #define __wasm_sign_ext__ 1
-#define __wasm_simd128__ 1
 #define _tolower(a) ((a)|0x20)
 #define _toupper(a) ((a)&0x5f)
 #define acos(x) __tg_real_complex(acos, (x))
