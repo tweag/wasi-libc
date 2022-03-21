@@ -1,3 +1,5 @@
+#ifdef _WASI_EMULATED_SIGNAL
+
 #define SIGHUP    1
 #define SIGINT    2
 #define SIGQUIT   3
@@ -34,3 +36,5 @@
 #define SIGUNUSED SIGSYS
 
 #define _NSIG 65
+
+#endif
