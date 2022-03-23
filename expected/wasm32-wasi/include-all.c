@@ -117,7 +117,6 @@
 #include <sched.h>
 #include <search.h>
 #include <semaphore.h>
-#include <setjmp.h>
 #include <stdalign.h>
 #include <stdbool.h>
 #include <stdc-predef.h>
