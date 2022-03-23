@@ -323,6 +323,7 @@ MUSL_OMIT_HEADERS += \
     "netdb.h" \
     "resolv.h" \
     "pty.h" \
+    "dlfcn.h" \
     "ulimit.h" \
     "sys/xattr.h" \
     "wordexp.h" \
